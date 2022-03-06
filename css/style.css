@@ -1,5 +1,5 @@
 /* Importação Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
 /* Reset CSS */
 * {
     margin: 0;
@@ -38,6 +38,11 @@ header {
     font-size: 20px;
 }
 
+.barras{
+    width: 30px;
+    display: none;
+}
+
 .banner  {
     height: 605px;
     background-image: url(../img/banner.png);
@@ -57,4 +62,102 @@ header {
     width: 495px;
     color: white;
     text-align: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.texto-banner h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.texto-banner p {
+    margin-bottom: 50px;
+}
+
+.texto-banner a {
+    background-color: #C31616;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.secao-jogos {
+    background-color: black;
+    height: 90px;
+}
+
+.jogos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jogos img {
+    width: 150px;
+}
+
+.secao-sobre {
+    background-image: url(../img/fundo-sobre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-sobre{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    .menu {
+        width: 460px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .logo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        color: blue;
+    }
+
+    .barras {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 65px;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }
 }
